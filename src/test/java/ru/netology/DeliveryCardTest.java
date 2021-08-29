@@ -14,11 +14,6 @@ import static com.codeborne.selenide.Selenide.open;
 
 class DeliveryCardTest {
 
-    @BeforeAll
-    static void setUpAll() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
-    }
-
     @BeforeEach
     void setup() {
         open("http://localhost:9999");
